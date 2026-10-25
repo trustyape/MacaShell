@@ -168,18 +168,6 @@ void handle_help(void)
            "  macashell -b payload.bin -u > uuids.txt\n");
 }
 
-void handle_menu(void)
-{
-    if (isatty(STDOUT_FILENO))
-        fprintf(stderr, "Menu\n");
-}
-
-void handle_error(void)
-{
-    if (isatty(STDOUT_FILENO))
-        fprintf(stderr, "Error\n");
-}
-
 /* Global constants */
 static const char base64_table[] =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
